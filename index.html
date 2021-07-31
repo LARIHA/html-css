@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INTRODUCCION A HTML 5</title>
+    </head>
+   
+    <style>
+                 
+           header img {
+               margin: 20px auto;
+               width: 150px;
+               display: block;
+           }
+           nav {
+               background-color:wheat;
+               }
+
+            nav li {
+                display: inline-block;
+            }
+            nav a {
+                color: black;
+                padding: 5px 55px;
+                text-decoration:solid;
+                font-size: 25px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:lighter;
+            }
+
+            article{
+                background-color:wheat;
+                color:black;
+                font-family:'Times New Roman', Times, serif;
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+
+            
+            .agrupar {
+                width: 960px;
+                background:rgb(252, 197, 116);
+                margin:15px auto;
+                padding: 40px;
+                
+
+            }
+
+            .seccion{
+                margin: 20px;
+                width: 550px;
+                float: left;
+            }
+
+            .columna{
+                
+                
+                width: 350px;
+                float: left;
+                background-color:wheat;                
+                }
+
+            .columna li {
+                            
+                margin: 20px;
+                            padding: 70px;
+                            margin-bottom: 40px;
+                            
+                          }
+            
+
+                       
+                
+            .pie{
+                clear: both;
+                padding: 20px;
+                text-align: center;
+                background-color:wheat;
+                color:black;
+            }
+/*? -----------pseudo-clases-------*/
+            .enlace:active{
+                background: black;
+            }
+            .enlace:hover{
+                color: orange;
+            }
+
+            .parrafos {
+                text-align: justify;
+                background: orangered;
+                color: white;
+            }
+/*? -----------media queries-------*/
+            @media (max-width: 400px){
+                .parrafos{
+                    text-align:center;
+                background:black;
+                color: red;
+                }
+            }
+           
+           </style>
+
+              
+
+    <body>
+        <!--ENCABEZADO-->
+    
+        <div class="agrupar">
+
+            <header>
+                <img src="6.png" alt="Logotipo de HTML 5">
+             </header>
+             
+                          
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/Elementos.html">Elementos</a></li>
+                    <li><a href="pages/Atributos.html">Atributos</a></li>                              
+                </ul>
+            </nav>
+        
+
+            <section class="seccion">
+                
+                    <article class="parrafos">
+                        <h1>HTML5</h1>
+                         <p>Significa Hyper Text Markup Language, Es la combinacion de Lenguaje de Marcado e Hipertexto para construir sitios Web.
+                            El lenguaje de marcado se utiliza para definir el documento de texto dentro de etiquetas que definen la estructura de las
+                            paginas Web, el hipertexto define el enlace entre las Paginas Web,define el significado y la estructura del contenido Web.
+                            
+                             Los elementos de HTML5 son los componentes basicos de las paginas Web y estan representados por etiquetas llamadas TAGS 
+                                Utiliza el navegador para manipular texto, imagenes y otros contenidos para mostrarlo en un formato requerido</p>
+                    </article>
+            
+                
+                
+                <article>
+                    <h1>Aplicaciones de HTML</h1>
+                    <ol>
+                    <li>DeviantART muro: Una aplicación de dibujo basado en HTML 5 que funciona en todos los navegadores modernos, y se puede bucear y empezar a dibujar sobre un lienzo en blanco</li>
+                    <li>HootSuite: Panel de control social basado en HTML5 con algunas funciones muy útiles: geo-localización de Tweet, búsqueda, elección entre retweets con estilo nuevo y viejo, con Google Analytics, interfaz personalizado y mucho más. </li>
+                    <li>X-Worlds: Algo interesante para los niños, done puede presentar un dibujo de tu personaje favorito y ver que se transforman en una ilustración impresionante. </li> 
+                    <li>Coolendar: Un calendario basado en HTML5, con interfaz simple y limpio y funciones útiles para la gestión eficaz del tiempo.</li> 
+                    <li>Scribd: Una aplicación web que proporciona acceso en el navegador a todo tipo de documentos y libros electrónicos subidos por los usuarios. </li> 
+                    </ol>
+                </article>
+                <article>
+                    <h1>Versiones de HTML</h1>
+                     <ol>
+                     <li>HTML 2.0: En 1995 se publica el estándar HTML 2.0. A pesar de su nombre, HTML 2.0 es el primer estándar oficial de HTML, es decir, el HTML 1.0 no existió como estándar. HTML 2.0 no soportaba tablas. </li>
+                     <li>HTML 3.2: Se publicó en 1997 y es la primera recomendación de HTML publicada por el W3C (Consorcio internacional). Esta revisión incorporó los últimos avances de las páginas web desarrolladas hasta 1996, como applets de Java y texto que fluye alrededor de las imágenes. </li>
+                     <li>HTML 4.01: La última especificación oficial de HTML se publicó en diciembre de 1999 y se denomina HTML 4.01. Desde la publicación de HTML 4.01, el W3C se centró en el desarrollo del estándar XHTML.  </li>
+                     <li>HTML 4.01 Strict:En este tipo de documentos podemos usar etiquetas HTML 4.01, pero no se aceptan etiquetas obsoletas, es decir, etiquetas propias de versiones más antiguas </li>
+                     <li>HTML 4.01 Transitional: En este tipo de documentos se pueden usar todas las etiquetas de todas las versiones de HTML. Usar esta variante de HTML plantea el interrogante de si es correcto permitir el uso de etiquetas obsoletas que podrían dejar de funcionar en las proximas versiones de los navegadores. Sin embargo, este es el estándar más usado, porque combina la posibilidad de usar etiquetas más antiguas y etiquetas más modernas </li>
+                     <li>HTML 4.01 Frameset: Este tipo de documentos tiene soporte para frames. Los frames son unos marcos a modo de pequeñas subventanas dentro de una misma página web que se usaban mucho hace unos años pero que hoy en día se usan cada vez menos. </li>
+                     </ol>
+                </article>
+                     
+            </section>
+
+            
+                <aside class="columna">
+                
+                    <ul> ENLACES RELACIONADOS 
+                        <li><a class="enlace" href="https://es.wikipedia.org/wiki/HTML5#Ejemplos_de_c%C3%B3digos_HTML5">Ejemplos de Codigos HTML</a></li>
+                        <li><a class="enlace" href="https://es.wikipedia.org/wiki/HTML#Aprender_HTML_analizando_p%C3%A1ginas_reales">Aprender HTML analizando paginas Reales</a></li></ul>
+                    </aside>
+            
+            
+            <footer class="pie">
+               Desarrollo Web 2021
+            </footer>
+        </div>
+             
+    </body>
+    </html>
+        
